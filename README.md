@@ -21,13 +21,13 @@ pip install .
 pip install -r requirements.txt
 ```
 
-For installation guide, see [extra_installation](extra_installation.md).
+For the installation guide, see [extra_installation](extra_installation.md).
 
 ## Data Preparation
 
-All corredponding bashes are in folder data.
+All corresponding bashes are in folder data.
 
-1. To download corresponding datasets, go to [Google Drive](https://drive.google.com/drive/folders/1HbzxBD0klgX-EugVGB36CFVdObJJ5Uk7?usp=sharing) for cleaned dataset, or run bashs begin with 0.
+1. To download corresponding datasets, go to [Google Drive](https://drive.google.com/drive/folders/1HbzxBD0klgX-EugVGB36CFVdObJJ5Uk7?usp=sharing) for cleaned dataset, or run bashes begin with 0.
 
 ```bash
 cd data
@@ -35,7 +35,7 @@ bash 0-get_data_cwmt.sh
 bash 0-get_en_mono.sh
 ```
 
-2. After distilling, run [1-preprocess-distill.py](data/1-preprocess-distill.py) to preprocess those data, and then run bashs begin with 2 to calculate corresponding scores.
+2. After distilling, run [1-preprocess-distill.py](data/1-preprocess-distill.py) to preprocess those data, and then run bashes beginning with 2 to calculate corresponding scores.
 
 ```bash
 cd data
@@ -74,7 +74,7 @@ cd train/cwmt-enzh
 bash 0-distill_enzh_mono.sh
 ```
 
-We provide our dataset including distill set and pseudo reference set for easier reproduceability.
+We provide our dataset including distill set and pseudo reference set for easier reproducibility.
 
 We can now train vanilla wait-k model. To do this, run
 
@@ -83,6 +83,8 @@ bash 1b-distill_all_wait_k.sh generate/teacher_cwmt_mono/data-bin 3_anticipation
 ```
 
 *3_anticipation_rate_low_chunking_LM_filter* is the default name of our best strategy, change this field to run wait-k under any dataset (raw for original bilingual datasets).
+
+Our models are released at [Google Drive](https://drive.google.com/drive/folders/19aPnAPvT75KmlLA2Y0VipNJVF3cf3CaP?usp=sharing).
 
 ## Evaluation (SimulEval)
 
