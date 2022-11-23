@@ -114,3 +114,15 @@ python get_score.py
 ```
 
 for all subsets.
+
+
+## Citation
+If you find this work helpful, please consider citing as follows:
+```bibtex
+@inproceedings{deng2023mono4simt,
+    title = "Improving Simultaneous Machine Translation with Monolingual Data",
+    author = "Deng, Hexuan and Ding, Liang and Liu, Xuebo and Zhang, Meishan and Tao, Dacheng and Zhang, Min",
+    booktitle = "Proceedings of AAAI",
+    year = "2023",
+}
+```
