@@ -119,10 +119,17 @@ for all subsets.
 ## Citation
 If you find this work helpful, please consider citing as follows:
 ```bibtex
-@inproceedings{deng2023mono4simt,
-    title = "Improving Simultaneous Machine Translation with Monolingual Data",
-    author = "Deng, Hexuan and Ding, Liang and Liu, Xuebo and Zhang, Meishan and Tao, Dacheng and Zhang, Min",
-    booktitle = "Proceedings of AAAI",
-    year = "2023",
+@article{Deng_Ding_Liu_Zhang_Tao_Zhang_2023,
+    title={Improving Simultaneous Machine Translation with Monolingual Data},
+    volume={37},
+    url={https://ojs.aaai.org/index.php/AAAI/article/view/26497},
+    DOI={10.1609/aaai.v37i11.26497},
+    abstractNote={Simultaneous machine translation (SiMT) is usually done via sequence-level knowledge distillation (Seq-KD) from a full-sentence neural machine translation (NMT) model. However, there is still a significant performance gap between NMT and SiMT. In this work, we propose to leverage monolingual data to improve SiMT, which trains a SiMT student on the combination of bilingual data and external monolingual data distilled by Seq-KD. Preliminary experiments on En-Zh and En-Ja news domain corpora demonstrate that monolingual data can significantly improve translation quality (e.g., +3.15 BLEU on En-Zh). Inspired by the behavior of human simultaneous interpreters, we propose a novel monolingual sampling strategy for SiMT, considering both chunk length and monotonicity. Experimental results show that our sampling strategy consistently outperforms the random sampling strategy (and other conventional typical NMT monolingual sampling strategies) by avoiding the key problem of SiMT -- hallucination, and has better scalability. We achieve +0.72 BLEU improvements on average against random sampling on En-Zh and En-Ja. Data and codes can be found at https://github.com/hexuandeng/Mono4SiMT.},
+    number={11},
+    journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+    author={Deng, Hexuan and Ding, Liang and Liu, Xuebo and Zhang, Meishan and Tao, Dacheng and Zhang, Min},
+    year={2023},
+    month={Jun.},
+    pages={12728-12736} 
 }
 ```
